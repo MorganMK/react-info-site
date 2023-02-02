@@ -1,32 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Header from './Header'
+import Footer from './Footer'
+import './App.css' 
 
 function App() {
-  const [count, setCount] = useState(0)
+  return(
+    <div className="main">
+      <Header/>
+      
+      <h1>Reasons I'm excited to learn React</h1>
+      <ul>
+        <li>React is very popular</li>
+        <li>I'll' be able to fit in with the cool kids at school</li>
+        <li>I will easily transition into mobile development with React Native</li>
+        <li>Making money as a web developer is easier when you master React</li>
+      </ul>
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Footer/>
     </div>
   )
 }
