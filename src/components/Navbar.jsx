@@ -6,9 +6,9 @@ export default function Navbar(){
         <nav className='navbar'>
             <div className='first-item'>
                 <img src={reactLogo} alt="React Logo" />
-                <h1 className='heading'>ReactFacts</h1>
+                <h3 className='heading'>ReactFacts</h3>
             </div>
-            <p>React Course - Project 1</p>
+            <h4>React Course - Project 1</h4>
             
         </nav>
     )
